@@ -6,7 +6,7 @@ shopt -s dotglob
 # Vercel only does a shallow clone, which loses git info
 if [ "$VERCEL_ENV" = "production" ]; then
   rm -rf *
-  git clone  https://github.com/oozry12/asyihui.git .
+  git clone  git@github.com:oozry12/asyihui.git .
   git config advice.detachedHead false
   git checkout 
 fi
