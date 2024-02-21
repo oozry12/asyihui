@@ -1,6 +1,11 @@
 #!/bin/sh
 shopt -s dotglob
-
+if [ "$NETLIFY" = "true" ]; then
+  cd static
+  echo 'User-agent: *
+Disallow: /' > robots.txt
+  cd ..
+fi
 
 
 # Vercel only does a shallow clone, which loses git info
