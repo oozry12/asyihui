@@ -1,8 +1,8 @@
 [build]
-  command = "sudo ./build.sh"
+  command = "./build.sh"
   publish = "public"
 [build.environment]
-  HUGO_VERSION = "0.110.0"
+  HUGO_VERSION = "0.122.0"
 
 [context.production.environment]
   HUGO_ENV = "production"
