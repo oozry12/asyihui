@@ -11,7 +11,7 @@ fi
 # Vercel only does a shallow clone, which loses git info
 if [ "$VERCEL_ENV" = "production" ]; then
   rm -rf *
-  git clone  git@github.com:oozry12/asyihui.git .
+  git clone --recursive -b $VERCEL_GIT_COMMIT_REF https://github.com/$VERCEL_GIT_REPO_OWNER/$VERCEL_GIT_REPO_SLUG.git .
   git config advice.detachedHead false
   git checkout 
 fi
