@@ -107,7 +107,7 @@ span.hash-note::before { content: "　# "; }
     margin-left: auto;
   }
   .cn #TableOfContents {
-    columns: 2;
+    columns: 1;
   }
   .nav-next {
     border-right: 1px solid;
